@@ -1,9 +1,7 @@
 .friendList {
   display: flex;
-
-  margin-right: auto;
-  margin-left: auto;
   margin-top: 40px;
+  justify-content: center;
 }
 
 .item {
@@ -11,6 +9,7 @@
 
   padding: 10px 20px;
   text-align: center;
+  justify-content: center;
 
   background-color: #ebeef8;
   border-radius: 20px;

@@ -8,7 +8,7 @@ import FriendList from './components/friend/FriendList';
 import TransactionHistory from './components/transaction-history/TransactionHistory';
 import transactions from './components/transaction-history/ transactions.json';
 import s from './App.css';
-import Container from './components/Container/Container';
+import Container from './components/container/Container';
 function App() {
   return (
     <div className={s.App}>
