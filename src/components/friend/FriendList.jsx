@@ -1,10 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import FriendListItem from './FriendListItem';
+import s from './Friedns.module.css';
 
 const FriendList = ({ props }) => {
   return (
-    <ul class="friend-list">
+    <ul className={s.friendList}>
       <FriendListItem friends={props} />
     </ul>
   );

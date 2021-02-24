@@ -1,10 +1,11 @@
 import PropTypes from 'prop-types';
 import StatisticsList from './StatisticsList';
+import s from './Statistics.module.css';
 
 const Statistics = ({ title, children, stats }) => {
   return (
-    <section class="statistics">
-      {title && <h2 class="title"> {title}</h2>}
+    <section className={s.statistics}>
+      {title && <h2 className={s.title}> {title}</h2>}
       {children}
       <StatisticsList stats={stats} />
     </section>

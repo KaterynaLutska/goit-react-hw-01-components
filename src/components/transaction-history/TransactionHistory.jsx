@@ -1,21 +1,29 @@
 import PropTypes from 'prop-types';
+import s from './transactions.module.css';
+
+// const colorPicker = [
+//   { type: 'invoice', color: 'red' },
+//   { type: 'payment', color: 'blue' },
+//   { type: 'withdrawal', color: 'orange' },
+//   { type: 'deposit', color: 'green' },
+// ];
 
 const TransactionHistory = ({ items }) => {
   return (
-    <table class="transaction-history">
+    <table className={s.transactionHistory}>
       <thead>
         <tr>
-          <th>Type</th>
-          <th>Amount</th>
-          <th>Currency</th>
+          <th className={s.th}>Type</th>
+          <th className={s.th}>Amount</th>
+          <th className={s.th}>Currency</th>
         </tr>
       </thead>
       {items.map(({ id, type, amount, currency }) => (
-        <tbody key={id}>
-          <tr>
-            <td>{type}</td>
-            <td>{amount}</td>
-            <td>{currency}</td>
+        <tbody key={id} className={s.tbody}>
+          <tr className={s.tr}>
+            <td className={s.td}>{type}</td>
+            <td className={s.td}>{amount}</td>
+            <td className={s.td}>{currency}</td>
           </tr>
         </tbody>
       ))}
