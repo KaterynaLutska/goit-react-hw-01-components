@@ -12,6 +12,10 @@ const Statistics = ({ title, children, stats }) => {
   );
 };
 
+Statistics.defaultProps = {
+  title: 'Upload stats',
+};
+
 Statistics.propTypes = {
   title: PropTypes.string,
   children: PropTypes.node,
