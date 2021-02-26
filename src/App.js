@@ -1,14 +1,18 @@
 import './App.css';
-import Profile from './components/social-profile/Profile';
-import user from './components/social-profile/user.json';
+
+import user from './components/db/user.json';
+import statisticalData from './components/db/statistical-data.json';
+import friends from './components/db/friends.json';
+import transactions from './components/db/transactions.json';
+
+import Profile from './components/socialProfile/Profile';
 import Statistics from './components/statistics/Statistics';
-import statisticalData from './components/statistics/statistical-data.json';
-import friends from './components/friend/friends.json';
 import FriendList from './components/friend/FriendList';
-import TransactionHistory from './components/transaction-history/TransactionHistory';
-import transactions from './components/transaction-history/ transactions.json';
-import s from './App.css';
+import TransactionHistory from './components/transactionHistory/TransactionHistory';
 import Container from './components/container/Container';
+
+import s from './App.css';
+
 function App() {
   return (
     <div className={s.App}>

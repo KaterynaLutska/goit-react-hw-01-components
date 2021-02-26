@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import StatisticsList from './StatisticsList';
+import StatisticsItem from './statisticsItem/StatisticsItem';
 import s from './Statistics.module.css';
 
 const Statistics = ({ title, children, stats }) => {
@@ -7,7 +7,7 @@ const Statistics = ({ title, children, stats }) => {
     <section className={s.statistics}>
       {title && <h2 className={s.title}> {title}</h2>}
       {children}
-      <StatisticsList stats={stats} />
+      <StatisticsItem stats={stats} />
     </section>
   );
 };
