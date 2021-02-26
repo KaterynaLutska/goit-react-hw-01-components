@@ -5,9 +5,9 @@ import statisticalData from './components/db/statistical-data.json';
 import friends from './components/db/friends.json';
 import transactions from './components/db/transactions.json';
 
-import Profile from './components/socialProfile/Profile';
+import Profile from './components/profile/Profile';
 import Statistics from './components/statistics/Statistics';
-import FriendList from './components/friend/FriendList';
+import FriendList from './components/friends/Friends';
 import TransactionHistory from './components/transactionHistory/TransactionHistory';
 import Container from './components/container/Container';
 
